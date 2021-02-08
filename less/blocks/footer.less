@@ -4,7 +4,7 @@
   justify-content: space-between;
   height: 250px;
   padding-bottom: 30px;
-  background-color: #fff;
+  background-color: #084274;
 }
 
 .footer .container {
@@ -23,6 +23,7 @@
 
 .footer__wrap {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   height: 100%;
@@ -39,7 +40,9 @@
 }
 
 .footer .phone-block {
-  width: auto;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .footer__wrap .phone {
@@ -50,9 +53,15 @@
   transition: all .3s ease;
 }
 
+.footer__desc {
+  width: 100%;
+  color: #fff;
+  font-size: 17px;
+}
+
 .footer__wrap .phone:hover,
 .footer__wrap .phone:focus {
-  color: #FF7A00;
+  filter: drop-shadow(0px 0px 1px);
   transition: all .3s ease;
 }
 
@@ -87,12 +96,12 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
-  color: #FF7A00;
+  color: #fff;
 }
 
 .footer__mail:hover,
 .footer__mail:focus {
-  text-decoration: underline;
+  filter: drop-shadow(0px 0px 1px);
 }
 
 @media (max-width: 900px) {
