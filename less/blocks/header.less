@@ -162,21 +162,7 @@
     position: relative;
   }
 
-  .header__burger-wrap {
-    position: fixed;
-    left: 0;
-    top: 80px;
-    width: 100%;
-    height: 100vh;
-    padding: 0 45px;
-    background: url("../img/svg/burger-bg.svg") no-repeat right bottom, #FFFFFF;
-    background-size: 65%;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-    align-items: flex-start;
-    -webkit-animation: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    animation: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-  }
+
 
   .phone-btn-wrap {
     display: none;
@@ -199,10 +185,10 @@
     margin-bottom: 10px;
   }
 
-  .header__lang-wrap {
+/*  .header__lang-wrap {
     flex-direction: column;
     width: auto;
-  }
+  }*/
 
   .polish-lang::before {
     display: none;
@@ -210,10 +196,6 @@
 
   .polish-lang {
     padding-left: 0;
-  }
-
-  .active-lang {
-    color: #FF8F04;
   }
 
   .phone {
@@ -355,5 +337,15 @@
     -webkit-transform: translateX(-1000px);
     transform: translateX(-1000px);
     opacity: 0;
+  }
+}
+
+@media (max-width: 1020px) {
+  .header-nav {
+    display: none;
+  }
+
+  .header__burger-wrap {
+    width: 60px;
   }
 }
